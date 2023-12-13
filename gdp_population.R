@@ -1,3 +1,4 @@
+#Script to analyze relationship between GDP and life expectancy
 library(tidyverse)
 library(Rccp)
 gapminder_1997 <- read.csv("~/Downloads/un-report/un-report/gapminder_1997.csv")
@@ -60,5 +61,5 @@ ggplot(data=gapminder_data) +
   aes(x=year, y=lifeExp, color=continent) +
   geom_point() +
   labs(x="Year", y="life expectancy", title="Year vs. Life Expectancy")
-  
+
   
